@@ -1,0 +1,40 @@
+html {
+    background-image: url(./images/retrolandscape.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+h1 {
+    font-family: 'Goldman', cursive;
+    font-size: 100pt;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+button {
+    font-size: 30pt;
+    font-family: 'Goldman', cursive;
+    border-radius: 15px;
+    background-color: rgb(2,2,87);
+    color: white;
+}
+
+#login-section {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+}
+
+#pass-dude-cheer {
+    margin-left: 50pt;
+}

@@ -1,0 +1,28 @@
+html {
+    background-image: url(./images/pixelheadquarters.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+button {
+    font-size: 50pt;
+    padding: 15pt;
+    font-family: 'Goldman', cursive;
+    border-radius: 15px;
+    background-color: rgb(2,2,87);
+    color: white;
+    margin-top: 30pt;
+    transition: .3s, ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

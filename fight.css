@@ -1,0 +1,29 @@
+html {
+    background-image: url(./images/connor-fisher-alley-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+h1 {
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: rgb(197,203,201);
+    justify-self: center;
+    padding: 10px;
+    border-radius: 15pt;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40pt;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    border: 5px solid black;
+}
+
