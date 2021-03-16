@@ -27,3 +27,10 @@ h1 {
     border: 5px solid black;
 }
 
+label {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    border: 1px solid black;
+}
