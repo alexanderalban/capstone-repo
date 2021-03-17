@@ -67,10 +67,15 @@ console.log("string 3 =" + " " + fightString3)
 
 // This initiates the fight, when the fight button is clicked
 const fightStart = () => {
+
+    // This will populate the names of the hackers using the randomuser API and the 
+    // array that I set up earlier. This way random names will be used every time
     let hackerName1 = arrayOfHackers.results[0].login.username
     let hackerName2 = arrayOfHackers.results[1].login.username
     let hackerName3 = arrayOfHackers.results[2].login.username
     console.log("hacker1 is" + " " + hackerName1)
     console.log("hacker2 is" + " " + hackerName2)
     console.log("hacker2 is" + " " + hackerName3)
+
+
 }
