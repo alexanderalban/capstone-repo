@@ -64,3 +64,13 @@ console.log("string 1 =" + " " + fightString1)
 console.log("string 2 =" + " " + fightString2)
 console.log("string 3 =" + " " + fightString3)
 
+
+// This initiates the fight, when the fight button is clicked
+const fightStart = () => {
+    let hackerName1 = arrayOfHackers.results[0].login.username
+    let hackerName2 = arrayOfHackers.results[1].login.username
+    let hackerName3 = arrayOfHackers.results[2].login.username
+    console.log("hacker1 is" + " " + hackerName1)
+    console.log("hacker2 is" + " " + hackerName2)
+    console.log("hacker2 is" + " " + hackerName3)
+}
