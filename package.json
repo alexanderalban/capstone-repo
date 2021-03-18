@@ -1,0 +1,26 @@
+{
+  "name": "capstone-repo",
+  "version": "1.0.0",
+  "description": "Capstone Pitch for ACA 211",
+  "main": "fight.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "firebase": "^8.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderalban/capstone-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderalban/capstone-repo/issues"
+  },
+  "homepage": "https://github.com/alexanderalban/capstone-repo#readme"
+}

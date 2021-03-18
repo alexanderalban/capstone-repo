@@ -23,10 +23,10 @@
     const txtPassword = document.getElementById('txtPassword');
     const btnLogin = document.getElementById('btnLogin');
     const btnSignup = document.getElementById('btnSignUp');
-    const btnLogout = document.getElementById('butnLogout');
+    const btnLogout = document.getElementById('btnLogout');
 
 
-    // This is our login event
+    // This is the login event
     btnLogin.addEventListener('click', e => {
         const email = txtEmail.value;
         const pass = txtPassword.value;
@@ -34,6 +34,31 @@
 
         const promise = auth.signInWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
+    });
+
+    // This is the sign-up event 
+    btnSignup.addEventListener('click', e => {
+        const email = txtEmail.value;
+        const pass = txtPassword.value;
+        const auth = firebase.auth();
+
+        const promise = auth.createUserWithEmailAndPassword(email, pass);
+        promise.catch(e => console.log(e.message));
+    })
+
+    // Authentication Listener
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if (firebaseUser) {
+            console.log(firebaseUser);
+        } else {
+            console.log('not logged in')
+        }
+    })
+
+    // Logout event
+
+    btnLogout.addEventListener('click', e => {
+        firebase.auth().signOut();
     })
 
 }());
