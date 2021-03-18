@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="training.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Training</title>
+  </head>
+  <body>
+    <main>
+      <!-- This is the title/alert to the player that "hackers" are attacking -->
+      <h1 id="badguy-alert">BADGUYS INBOUND</h1>
+      <!-- This section of the screen includes the player avatar -->
+      <button id="fight-button" onclick="fightStart()">Click to FIGHT!</button
+      ><br /><br />
+      <a href="main-menu.html" id="backSection"
+        ><button id="back-button">Back</button></a
+      ><br /><br />
+
+      <section id="player-section">
+        <img id="peteygif" src="images/Petey Prototype.gif" />
+      </section>
+      <!-- This section includes  -->
+      <section id="computer-section"></section>
+    </main>
+    <script src="fight.js"></script>
+  </body>
+</html>
