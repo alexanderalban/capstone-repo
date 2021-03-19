@@ -1,0 +1,28 @@
+html {
+    background-image: url(./images/login.png);
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+button {
+    font-size: 15pt;
+    font-family: 'Goldman', cursive;
+    border-radius: 15px;
+    background-color: rgb(2,2,87);
+    color: white;
+}
+
+.container {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+}
