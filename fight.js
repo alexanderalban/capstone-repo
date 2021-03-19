@@ -151,4 +151,10 @@ const fightStart = () => {
 
     // This will append the form itself, with all the elements included
     hackerForm.appendChild(form);
+
+
+    // This is adding fight functionality to our appended form
+
+    
+
 }

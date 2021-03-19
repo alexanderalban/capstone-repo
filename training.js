@@ -151,4 +151,7 @@ const fightStart = () => {
 
     // This will append the form itself, with all the elements included
     hackerForm.appendChild(form);
+
+    //This is the end for training, since it will loop by default when the
+    // endFightButton is clicked
 }
