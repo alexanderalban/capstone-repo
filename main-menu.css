@@ -30,8 +30,11 @@ button {
     
 }
 
+
+
 a:link {
     text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 
 a:visited {
@@ -41,4 +44,5 @@ a:visited {
 
 button:hover {
     transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }

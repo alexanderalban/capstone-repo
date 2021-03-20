@@ -1,7 +1,6 @@
 html {
     background-image: url(./images/login.png);
     background-attachment: fixed;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,4 +24,9 @@ button {
     display: grid;
     justify-self: center;
     justify-content: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
