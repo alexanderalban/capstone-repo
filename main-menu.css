@@ -1,3 +1,5 @@
+/* allows for parallax scrolling of the background */
+
 html {
     background-image: url(./images/pixelheadquarters.png);
     background-attachment: fixed;
@@ -6,6 +8,7 @@ html {
     background-size: cover;
 }
 
+/* establishes a grid for the main content */
 main {
     display: grid;
     justify-items: center;
@@ -13,6 +16,7 @@ main {
     align-self: center;
 }
 
+/* adjustments for the various buttons on the main menu */
 button {
     font-size: 50pt;
     padding: 15pt;
@@ -24,25 +28,14 @@ button {
     transition: .3s, ease-in-out;
 }
 
-#main-menu-return a {
-    justify-self: center;
-    text-decoration: none;
-    
-}
-
-
-
-a:link {
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-}
-
-a:visited {
-    text-decoration: none;
-    color: white;
-  }
-
 button:hover {
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
+}
+
+/* adjustments for smaller screens */
+@media (max-width: 576px) {
+    button {
+        font-size: 10pt;
+    }
 }

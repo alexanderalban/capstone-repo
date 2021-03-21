@@ -1,3 +1,5 @@
+/* allows for parallax scrolling of the background */
+
 html {
     background-image: url(./images/retrolandscape.png);
     background-attachment: fixed;
@@ -6,6 +8,7 @@ html {
     background-size: cover;
 }
 
+/* establishes a grid for the main content */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -21,6 +24,7 @@ h1 {
     -webkit-text-stroke-color: black;
 }
 
+/* various adjustments for the main menu button */
 button {
     font-size: 30pt;
     font-family: 'Goldman', cursive;
@@ -37,9 +41,31 @@ button:hover {
 #login-section {
     display: grid;
     justify-self: center;
-    justify-content: center;
 }
 
+
+/* adjustments for the Petey image on the splash screen */
 #pass-dude-cheer {
-    margin-left: 50pt;
+    margin-left: 0pt;
+}
+
+
+/* adjustments for smaller screen sizes */
+@media (max-width: 576px) {
+    button {
+        font-size: 20pt;
+    }
+
+    h1 {
+        font-size: 40pt;
+    }
+
+    #pass-dude-cheer {
+        max-width: 100px;
+    }
+
+    img {
+        max-width: 550pt;
+        margin-left: -250pt;
+    }
 }
