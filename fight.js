@@ -155,6 +155,17 @@ const fightStart = () => {
 
     // This is adding fight functionality to our appended form
 
-    
+    endFightButton.addEventListener('click', function(event) {
+        event.preventDefault();  
+        console.log("click");
+        if (firstFight.value === fightString1 &&
+            secondFight.value === fightString2 &&
+            thirdFight.value === fightString3) {
+                alert("You won! The hackers are running away...for now")
+            } else {
+                alert("Oh no! One or more of the codes was entered incorrectly! Try again!")
+            }
+        }
+      );
 
 }
