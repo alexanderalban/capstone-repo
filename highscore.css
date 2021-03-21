@@ -55,3 +55,21 @@ td {
     border: 1px solid black;
 }
 
+button {
+    grid-column: 1 / 3;
+    font-size: 15pt;
+    padding: 10pt;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 15px;
+    background-color: rgb(2,2,87);
+    color: white;
+    margin-top: 30pt;
+    transition: .3s, ease-in-out;
+    align-self: center;
+    justify-self: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
